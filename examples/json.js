@@ -16,6 +16,8 @@ coap.createServer(function(req, res) {
     .request({
       pathname: '/Matteo',
       options: {
+         'Content-Format':'application/json',
+        'Accept':'application/json'
       }
     })
     .on('response', function(res) {
